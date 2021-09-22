@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: black;
+}
+
+#imagen1{
+    width: 300px;
+    height: 100px;
+}
+
+
+a:hover {
+    color:rgb(216,30,39);
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+
+a{
+    font-family: "Libre Baskerville";
+    font-size: 19px;
+    color: white;
+    text-decoration: None;
+    padding: 8px;
+}
+
+
+#boton2{
+    background-color: #D81E27;
+    font-family: "Libre Baskerville";
+    font-size: 19px;
+    border-radius: 5em;
+}
+
+#boton3{
+    background-color: #D81E27;
+    font-family: "Libre Baskerville";
+    font-size: 19px;
+    border-radius: 5em;
+}
+
+
+#enviar{
+    background-color: #D81E27;
+    font-family: "Libre Baskerville";
+    font-size: 19px;
+    float: right;
+    border-radius: 5em;
+}
+
+#linea1{
+    border-top: 3px solid rgb(216,30,39);
+}
+
+#cancelar{
+    font-family: 'Libre Baskerville';
+    background-color: rgb(216,30,39);
+}
+
+#enviar{
+    font-family: 'Libre Baskerville';
+    background-color: rgb(216,30,39);
+}
+
+.form-register{
+    width: 400px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'Libre Baskerville';
+    color: white;
+
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    background: gray;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid black;
+}
+
+h5{
+    color:white;
+}
+
+#footer{
+    border-top: 3px solid rgb(216,30,39);
+    background-color: black; 
+}
+
+#footer h5{
+    color: white;
+    text-align: center;
+}
+
+#w3c {
+   position: relative;
+   left: 600px;
+}
+

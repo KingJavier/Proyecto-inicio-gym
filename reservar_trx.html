@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- Pagina Reservar | Trx
+ Ficha: 2252471
+ Grupo: 01
+ Intregantes:
+ - Miller Santiago Nivia
+ - Javier Eudoro Rey
+ - Santiago Gómez Orjuela
+ - Cristhofer Tibaquicha
+ - Yohan Santiago Piraquive
+ Fecha: 30 / 03 / 2021 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reservar.css" type="text/css">
+    <link rel="icon" type="image/png" href="imagenesm/imagotipo.png">
+    <title>Reservar | TRX</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Encabezado-->
+        <div class="row">
+          <header class="col"></header>
+        </div>
+
+        <!--Barra de navegación-->
+            <nav class="navbar navbar-expand navbar-dark ">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!--Items de la barra de navegación-->
+                            <li class="nav-item">
+                                <a class="nav-link" id="navinicio" href="inicio1.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="navreservar" href="reservar_trx.html">&nbsp;&nbsp;&nbsp;&nbsp;Reservar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="navinicio" href="clases.html">&nbsp;&nbsp;&nbsp;&nbsp;Mis clases</a>
+                            </li>  
+                    </ul>
+                </div>
+                </div>
+            </nav>
+
+
+        <!--Imagen de Horarios disponibles-->
+        <div class="row" id="horarios">
+            <div class="col-sm-8 col-lg-6">
+                <img src="imagenesm/horariosdisponibles.jpeg" id="imghorarios">
+            </div>  
+        </div>
+
+        <!--Filtros-->
+        <div class="row" id="filtros">
+            <div class="col-3 col-md-2 col-lg-1">
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;Filtros</h1>
+            </div> 
+            <div class="col-3 col-md-3 col-lg-10" id="desplegardeportes">
+                <div class="dropdown" id="boton">
+                    <a class="btn btn1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">TRX</a>
+                    <!--Deportes disponibles para elegir-->
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="reservar_yoga.html">Yoga</a></li>
+                      <li><a class="dropdown-item" href="reservar_boxeo.html">Boxeo</a></li>
+                      <li><a class="dropdown-item" href="reservar_trx.html">TRX</a></li>
+                      <li><a class="dropdown-item" href="reservar_efuncional.html">Entrenamiento funcional</a></li>
+                    </ul>
+                  </div>
+            </div> 
+        </div>
+
+        <!--Información de las clases disponibles-->
+        <!--Clase 1-->
+        <div class="row" id="clases1">
+            <!--Información de la clase 1-->
+            <div class="col-3 col-sm-2" id="textoclases">10 Abril</div>
+            <div class="col-6 col-sm-2" id="textoclases">09:00 am</div>
+            <div class="col-4 col-sm-2"><img src="imagenesm/imagotipo.png" class="rounded mx-auto d-block" id="imglogo"></div>
+            <div class="col-8 col-sm-4" id="textoclases">TRX - Profesor GYM STYLE's</div>
+            <div class="col-12 col-sm-2" id="textoclases">
+                <button type="button" class="btn btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar</button>
+                <p id="cupos">0/10</p>
+            </div>
+            <!--Modal desplegado al darle reservar-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Confirmar reservación</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Cuerpo del modal desplegado-->
+                    <div class="modal-body">
+                        <strong>Clase: </strong>TRX <br/>
+                        <strong>Fecha: </strong>10 Abril <br/>
+                        <strong>Hora: </strong>09:00 am <br/>
+                        <strong>Profesor: </strong>Gym Style's
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal" id="btnconfirmar">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal desplegado al confirmar la reservación-->
+              <div class="modal fade" id="modal2" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" id="prueba">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Su clase fue agendada exitosamente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Cuerpo del modal desplegado-->
+                        <div class="modal-body">
+                            Señor usuario su clase de <strong>TRX</strong> ha sido asignada para el día <strong>10 de Abril</strong> a las <strong>09:00 am</strong>, por favor asistir puntualmente y siguiendo los protocolos de bioseguridad.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Clase 2-->
+        <div class="row" id="clases1">
+            <!--Información de la clase 2-->
+            <div class="col-3 col-sm-2" id="textoclases">10 Abril</div>
+            <div class="col-6 col-sm-2" id="textoclases">11:00 am</div>
+            <div class="col-4 col-sm-2"><img src="imagenesm/imagotipo.png" class="rounded mx-auto d-block" id="imglogo"></div>
+            <div class="col-8 col-sm-4" id="textoclases">TRX - Profesor GYM STYLE's</div>
+            <div class="col-12 col-sm-2" id="textoclases">
+                <button type="button" class="btn btn2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Reservar</button>
+                <p id="cupos1">0/10</p>
+            </div>
+            <!--Modal desplegado al darle reservar-->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel2">Confirmar reservación</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Cuerpo del modal desplegado-->
+                    <div class="modal-body">
+                        <strong>Clase: </strong>TRX <br/>
+                        <strong>Fecha: </strong>10 Abril <br/>
+                        <strong>Hora: </strong>11:00 am <br/>
+                        <strong>Profesor: </strong>Gym Style's
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary" data-bs-target="#modal3" data-bs-toggle="modal" data-bs-dismiss="modal" id="btnconfirmar1">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal desplegado al confirmar la reservación-->
+              <div class="modal fade" id="modal3" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" id="prueba2">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel2">Su clase fue agendada exitosamente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Cuerpo del modal desplegado-->
+                        <div class="modal-body">
+                            Señor usuario su clase de <strong>TRX</strong> ha sido asignada para el día <strong>10 de Abril</strong> a las <strong>11:00 am</strong>, por favor asistir puntualmente y siguiendo los protocolos de bioseguridad.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Clase 3-->
+        <div class="row" id="clases1">
+            <!--Información de la clase 3-->
+            <div class="col-3 col-sm-2" id="textoclases">10 Abril</div>
+            <div class="col-6 col-sm-2" id="textoclases">01:00 pm</div>
+            <div class="col-4 col-sm-2"><img src="imagenesm/imagotipo.png" class="rounded mx-auto d-block" id="imglogo"></div>
+            <div class="col-8 col-sm-4" id="textoclases">TRX - Profesor GYM STYLE's</div>
+            <div class="col-12 col-sm-2" id="textoclases">
+                <button type="button" class="btn btn2" data-bs-toggle="modal" data-bs-target="#exampleModal3">Reservar</button>
+                <p id="cupos2">0/10</p>
+            </div>
+            <!--Modal desplegado al darle reservar-->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel3">Confirmar reservación</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Cuerpo del modal desplegado-->
+                    <div class="modal-body">
+                        <strong>Clase: </strong>TRX <br/>
+                        <strong>Fecha: </strong>10 Abril <br/>
+                        <strong>Hora: </strong>01:00 pm <br/>
+                        <strong>Profesor: </strong>Gym Style's
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary" data-bs-target="#modal4" data-bs-toggle="modal" data-bs-dismiss="modal" id="btnconfirmar2">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal desplegado al confirmar la reservación-->
+              <div class="modal fade" id="modal4" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" id="prueba3">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel3">Su clase fue agendada exitosamente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Cuerpo del modal desplegado-->
+                        <div class="modal-body">
+                            Señor usuario su clase de <strong>TRX</strong> ha sido asignada para el día <strong>10 de Abril</strong> a las <strong>01:00 pm</strong>, por favor asistir puntualmente y siguiendo los protocolos de bioseguridad.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Clase 4-->
+        <div class="row" id="clases1">
+            <!--Información de la clase 4-->
+            <div class="col-3 col-sm-2" id="textoclases">10 Abril</div>
+            <div class="col-6 col-sm-2" id="textoclases">03:00 pm</div>
+            <div class="col-4 col-sm-2"><img src="imagenesm/imagotipo.png" class="rounded mx-auto d-block" id="imglogo"></div>
+            <div class="col-8 col-sm-4" id="textoclases">TRX - Profesor GYM STYLE's</div>
+            <div class="col-12 col-sm-2" id="textoclases">
+                <button type="button" class="btn btn2" data-bs-toggle="modal" data-bs-target="#exampleModal4">Reservar</button>
+                <p id="cupos3">0/10</p>
+            </div>
+            <!--Modal desplegado al darle reservar-->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel4">Confirmar reservación</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!--Cuerpo del modal desplegado-->
+                    <div class="modal-body">
+                        <strong>Clase: </strong>TRX <br/>
+                        <strong>Fecha: </strong>10 Abril <br/>
+                        <strong>Hora: </strong>03:00 pm <br/>
+                        <strong>Profesor: </strong>Gym Style's
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary" data-bs-target="#modal5" data-bs-toggle="modal" data-bs-dismiss="modal" id="btnconfirmar3">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Modal desplegado al confirmar la reservación-->
+              <div class="modal fade" id="modal5" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" id="prueba4">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel4">Su clase fue agendada exitosamente</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--Cuerpo del modal desplegado-->
+                        <div class="modal-body">
+                            Señor usuario su clase de <strong>TRX</strong> ha sido asignada para el día <strong>10 de Abril</strong> a las <strong>03:00 pm</strong>, por favor asistir puntualmente y siguiendo los protocolos de bioseguridad.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="row">
+            <footer class="col-6" id="copy">Derechos reservados 2021  ©</footer>
+            <img src="imagenesm/w3c.png" id="imgw3c">
+        </div>
+    </div>
+    <!--Librerias de JavaScript ofrecidas por Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="javascript/reservar.js"></script>
+</body>
+</html>
